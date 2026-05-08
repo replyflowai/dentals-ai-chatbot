@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileCare Dental – AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-wrapper">
+        <div class="chat-header">
+            <div class="clinic-logo">🦷</div>
+            <div>
+                <div class="clinic-name">SmileCare Dental</div>
+                <div class="clinic-status">AI Assistant · Online 24/7</div>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="bubble">
+                    Hi! I'm the SmileCare AI assistant. How can I help with your dental health today? 😊
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off">
+            <button id="sendBtn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

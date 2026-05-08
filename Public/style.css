@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-wrapper {
+    width: 400px;
+    height: 600px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.clinic-logo {
+    font-size: 24px;
+    background: white;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.clinic-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.clinic-status {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    display: flex;
+    width: 100%;
+}
+
+.user-message {
+    justify-content: flex-end;
+}
+
+.bubble {
+    max-width: 80%;
+    padding: 12px 16px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.bot-message .bubble {
+    background: #e9e9eb;
+    color: #333;
+    border-bottom-left-radius: 4px;
+}
+
+.user-message .bubble {
+    background: #007bff;
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-input-area {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:disabled {
+    background: #ccc;
+}
