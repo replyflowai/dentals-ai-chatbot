@@ -8,34 +8,47 @@
 </head>
 <body>
   <div class="chat-wrapper">
+
     <div class="chat-header">
       <div class="clinic-logo">🦷</div>
       <div class="header-info">
-        <div class="clinic-name">SmileCare Dental</div>
+        <div class="clinic-name">SmileCare Dental Clinic</div>
         <div class="clinic-status">
           <span class="status-dot"></span> AI Assistant · Online 24/7
         </div>
+      </div>
+      <div class="header-actions">
+        <a href="tel:+919876543210" class="call-btn">📞 Call</a>
       </div>
     </div>
 
     <div class="chat-messages" id="chatMessages"></div>
 
     <div class="quick-replies" id="quickReplies">
-      <button onclick="quickSend('Book Appointment')">📅 Book Appointment</button>
-      <button onclick="quickSend('Clinic Hours')">🕐 Clinic Hours</button>
-      <button onclick="quickSend('Treatment Prices')">💰 Pricing</button>
-      <button onclick="quickSend('Clinic Location')">📍 Location</button>
+      <button onclick="quickSend('I want to book an appointment')">📅 Book Appointment</button>
+      <button onclick="quickSend('What are your clinic hours?')">🕐 Clinic Hours</button>
+      <button onclick="quickSend('What are your treatment prices?')">💰 Pricing</button>
+      <button onclick="quickSend('Where is your clinic located?')">📍 Location</button>
+      <button onclick="quickSend('What treatments do you offer?')">🦷 Treatments</button>
     </div>
 
     <div class="chat-input-area">
-      <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Type your message..."
+        autocomplete="off"
+      />
       <button id="sendBtn" onclick="sendMessage()">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
           <line x1="22" y1="2" x2="11" y2="13"></line>
           <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
         </svg>
       </button>
     </div>
+
   </div>
   <script src="script.js"></script>
 </body>
