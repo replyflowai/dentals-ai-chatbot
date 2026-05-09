@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmileCare Dental – AI Assistant</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileCare Dental – AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="chat-wrapper">
-        <div class="chat-header">
-            <div class="clinic-logo">🦷</div>
-            <div>
-                <div class="clinic-name">SmileCare Dental</div>
-                <div class="clinic-status">AI Assistant · Online 24/7</div>
-            </div>
+  <div class="chat-wrapper">
+    <div class="chat-header">
+      <div class="clinic-logo">🦷</div>
+      <div class="header-info">
+        <div class="clinic-name">SmileCare Dental</div>
+        <div class="clinic-status">
+          <span class="status-dot"></span> AI Assistant · Online 24/7
         </div>
-
-        <div class="chat-messages" id="chatMessages">
-            <div class="message bot-message">
-                <div class="bubble">
-                    Hi! I'm the SmileCare AI assistant. How can I help with your dental health today? 😊
-                </div>
-            </div>
-        </div>
-
-        <div class="chat-input-area">
-            <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off">
-            <button id="sendBtn" onclick="sendMessage()">Send</button>
-        </div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="chat-messages" id="chatMessages"></div>
+
+    <div class="quick-replies" id="quickReplies">
+      <button onclick="quickSend('Book Appointment')">📅 Book Appointment</button>
+      <button onclick="quickSend('Clinic Hours')">🕐 Clinic Hours</button>
+      <button onclick="quickSend('Treatment Prices')">💰 Pricing</button>
+      <button onclick="quickSend('Clinic Location')">📍 Location</button>
+    </div>
+
+    <div class="chat-input-area">
+      <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off">
+      <button id="sendBtn" onclick="sendMessage()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
