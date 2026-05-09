@@ -55,8 +55,8 @@ function formatBotMessage(text) {
 
   // Clickable phone
   text = text.replace(
-    /\+91\s*98765\s*43210/g,
-    '<a href="tel:+919876543210" style="color:#1a73e8;font-weight:600;">📞 +91 98765 43210</a>'
+    /\+91\s*9348641342/g,
+    '<a href="tel:+919348641342" style="color:#1a73e8;font-weight:600;">📞 +91 93486 41342</a>'
   );
 
   return text;

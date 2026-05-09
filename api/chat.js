@@ -33,7 +33,7 @@ CLINIC DETAILS:
 - Clinic: SmileCare Dental Clinic
 - Address: 123 Health Street, City Center, Mumbai - 400001
 - Google Maps: https://maps.google.com/?q=SmileCare+Dental+Clinic+Mumbai
-- Phone: +91 98765 43210
+- Phone: +91 9348641342
 - Hours: Monday to Saturday, 9:00 AM - 7:00 PM | Sunday: Closed
 - Treatments & Pricing:
   • Consultation: ₹300
@@ -121,7 +121,7 @@ After address: "✅ Appointment Booked Successfully!
 🏥 SmileCare Dental Clinic
 📍 123 Health Street, City Center, Mumbai
 🗺️ https://maps.google.com/?q=SmileCare+Dental+Clinic+Mumbai
-📞 +91 98765 43210
+📞 +91 9348641342
 ━━━━━━━━━━━━━━━━━
 ⏰ Please arrive 10 minutes early.
 Our team will call you shortly to confirm! 😊"
